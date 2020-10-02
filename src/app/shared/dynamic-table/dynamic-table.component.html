@@ -1,0 +1,14 @@
+<table class="table">
+  <thead class="row-even">
+    <th *ngIf="configTable.numericalOrder == true">STT</th>
+    <th *ngFor="let title of configTable.properties">{{title.name.en}}</th>
+  </thead>
+  <tbody>
+  <tr *ngFor = "let obj of data; let i = index; let even = even">
+    <td [class.row-even]="!even" *ngIf="configTable.numericalOrder == true">{{i+1}}</td>
+    <td [class.row-even]="!even" *ngFor="let property of configTable.properties">
+      <span>{{obj[property.name.en]}}</span>
+    </td>
+  </tr>
+  </tbody>
+</table>
