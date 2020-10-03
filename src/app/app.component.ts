@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MessagesService} from './shared/services/messages.service';
 
 @Component({
@@ -6,7 +6,7 @@ import {MessagesService} from './shared/services/messages.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'angular-seabank';
   input;
   constructor(public messageService: MessagesService) {}
@@ -21,5 +21,12 @@ export class AppComponent {
       this.messageService.sendMessage(this.input);
       this.input = '';
     }
+  }
+
+  ngOnInit(): void {
+  }
+
+  callApi(){
+    this.messageService.getMessages().subscribe();
   }
 }

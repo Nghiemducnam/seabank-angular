@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
 import * as Stomp from 'stompjs';
 import * as SockJS from 'sockjs-client';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessagesService {
+  api: string = 'http://localhost:8080/api';
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.initializeWebSocketConnection();
   }
 
@@ -32,5 +35,9 @@ export class MessagesService {
 
   sendMessage(message) {
     this.stompClient.send('/app/send/message', {}, message);
+  }
+
+  getMessages(): Observable<any> {
+    return this.http.get(this.api);
   }
 }

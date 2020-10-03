@@ -7,3 +7,4 @@ npm install stompjs
 npm install sockjs-client
 npm i net -S
 
+-front-end => docker-compose github
