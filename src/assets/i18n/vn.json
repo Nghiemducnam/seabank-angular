@@ -1,0 +1,15 @@
+{
+  "Table": {
+    "title": {
+      "transactionCode": "Mã giao dịch",
+      "customerId": "ID KH",
+      "identityCode": "Số GTTT",
+      "typeIdentity": "Loại GTTT",
+      "typeCustomer": "Loại KH",
+      "transactionType": "Loại giao dịch",
+      "status": "Trạng thái",
+      "inputUser": "User nhập",
+      "approve": "User duyệt"
+    }
+  }
+}

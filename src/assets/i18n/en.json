@@ -1,0 +1,15 @@
+{
+  "Table": {
+    "title": {
+      "transactionCode": "Transaction code",
+      "customerId": "Customer Id",
+      "identityCode": "Identity code",
+      "typeIdentity": "Identity type",
+      "typeCustomer": "Customer type",
+      "transactionType": "Transaction type",
+      "status": "Status",
+      "inputUser": "User input",
+      "approve": "Approver"
+    }
+  }
+}
