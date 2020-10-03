@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MessagesService} from './shared/services/messages.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-seabank';
+  input;
+  constructor(public messageService: MessagesService) {}
 
   public changeLanguage(code: string) {
     localStorage.setItem('locale', code);
     window.location.reload();
+  }
+
+  sendMessage() {
+    if (this.input) {
+      this.messageService.sendMessage(this.input);
+      this.input = '';
+    }
   }
 }

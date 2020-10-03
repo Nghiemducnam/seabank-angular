@@ -9,6 +9,7 @@ import {TranslateModule, TranslateService} from '@ngx-translate/core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {catchError} from 'rxjs/operators';
 import {forkJoin, of} from 'rxjs';
+import {FormsModule} from '@angular/forms';
 
 export function initApp(http: HttpClient, translate: TranslateService) {
   return () => new Promise<boolean>((resolve: (res: boolean) => void) => {
@@ -50,7 +51,8 @@ export function initApp(http: HttpClient, translate: TranslateService) {
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    TranslateModule.forRoot()
+    TranslateModule.forRoot(),
+    FormsModule
   ],
   providers: [{
     provide: APP_INITIALIZER,

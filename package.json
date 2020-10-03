@@ -19,13 +19,17 @@
     "@angular/platform-browser": "~10.1.4",
     "@angular/platform-browser-dynamic": "~10.1.4",
     "@angular/router": "~10.1.4",
+    "@fortawesome/fontawesome-free": "^5.15.0",
     "@ngx-translate/core": "^13.0.0",
+    "@types/socket.io": "^2.1.11",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
+    "net": "^1.0.2",
     "rxjs": "~6.6.0",
+    "sockjs-client": "^1.5.0",
+    "stompjs": "^2.3.3",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2",
-    "@fortawesome/fontawesome-free": "^5.15.0"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.4",
