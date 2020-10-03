@@ -1,6 +1,6 @@
 [
   {
-    "transactionCode": "1112",
+    "transactionCode": "1119",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
@@ -11,40 +11,40 @@
     "approve": "Quy.lv"
   },
   {
-    "transactionCode": "1112",
+    "transactionCode": "1113",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
     "typeCustomer": "Phổ thông",
     "transactionType":  "Tất toán sổ tiết kiệm",
-    "status": "Chờ duyệt",
+    "status": "Từ chối",
     "inputUser": "Nam.nd",
     "approve": "Quy.lv"
   },
   {
-    "transactionCode": "1112",
+    "transactionCode": "1114",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
     "typeCustomer": "Phổ thông",
     "transactionType":  "Tất toán sổ tiết kiệm",
-    "status": "Chờ duyệt",
+    "status": "Đã duyệt",
     "inputUser": "Nam.nd",
     "approve": "Quy.lv"
   },
   {
-    "transactionCode": "1112",
+    "transactionCode": "1115",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
     "typeCustomer": "Phổ thông",
     "transactionType":  "Tất toán sổ tiết kiệm",
-    "status": "Chờ duyệt",
+    "status": "Hủy",
     "inputUser": "Nam.nd",
     "approve": "Quy.lv"
   },
   {
-    "transactionCode": "1112",
+    "transactionCode": "1116",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
