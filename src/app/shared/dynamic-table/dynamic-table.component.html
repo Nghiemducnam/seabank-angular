@@ -1,19 +1,19 @@
 <table class="table">
   <thead class="row-even">
-    <th *ngIf="configTable.numericalOrder == true">STT</th>
-    <th *ngFor="let title of configTable.properties">
-      <tr class="curs-move-over" (click)="sortBy(title, true)">
-        <td class="pr-0 text-left"><i class="fas fa-angle-down"></i></td>
-        <td>{{'Table.title.' + title?.name?.en | translate}}</td>
-      </tr>
-
-    </th>
+    <tr>
+      <th *ngIf="configTable.numericalOrder == true">STT</th>
+      <th *ngFor="let title of configTable.properties"
+          class="curs-move-over text-nowrap"
+          (click)="sortBy(title, true)">
+          <span class="pr-1"><i class="fas fa-angle-down"></i></span>{{'Table.title.' + title?.name?.en | translate}}
+      </th>
+    </tr>
   </thead>
   <tbody>
   <tr *ngFor = "let obj of listData; let i = index; let even = even">
     <td [class.row-even]="!even" *ngIf="configTable?.numericalOrder == true">{{i+1}}</td>
-    <td class="text-center" [class.row-even]="!even" *ngFor="let property of configTable?.properties">
-      <span class="text-center">{{obj[property?.name?.en]}}</span>
+    <td class="text-left" [class.row-even]="!even" *ngFor="let property of configTable?.properties">
+      <span class="text-nowrap">{{obj[property?.name?.en]}}</span>
     </td>
   </tr>
   </tbody>

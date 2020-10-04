@@ -24,7 +24,7 @@ export class DynamicTableComponent implements OnInit {
   }
 
   sortBy(key: any, isIncrease: boolean): any {
-    debugger
+
     this.isIncrease = !this.isIncrease;
     // console.log(this.isIncrease);
     const dataBank = [...this.data];

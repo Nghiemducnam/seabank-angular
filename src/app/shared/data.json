@@ -1,6 +1,6 @@
 [
   {
-    "transactionCode": "1119",
+    "transactionCode": "CB1111119",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
@@ -11,7 +11,7 @@
     "approve": "Quy.lv"
   },
   {
-    "transactionCode": "1113",
+    "transactionCode": "CB1111113",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
@@ -22,7 +22,7 @@
     "approve": "Quy.lv"
   },
   {
-    "transactionCode": "1114",
+    "transactionCode": "CB1111114",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
@@ -33,7 +33,7 @@
     "approve": "Quy.lv"
   },
   {
-    "transactionCode": "1115",
+    "transactionCode": "CB1111115",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
@@ -44,7 +44,7 @@
     "approve": "Quy.lv"
   },
   {
-    "transactionCode": "1116",
+    "transactionCode": "CB1111116",
     "customerId": "001",
     "identityCode": "Số GTTT",
     "typeIdentity": "Loại GTTT",
